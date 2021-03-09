@@ -1,2 +1,1 @@
-# CouplingCohesion
-GRASP: Low coupling and High cohesion
+# GRASP: Low coupling and High cohesion
