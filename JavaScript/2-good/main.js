@@ -24,7 +24,7 @@ http.createServer(async (req, res) => {
   });
 
   const handler = routing[req.url];
-  if (!handler) return res.end('Not found');
+  if (!handler) return void res.end('Not found');
   const result = await Promise.race([handler(), timeout(1000)]);
   res.end(result);
 }).listen(8000);
